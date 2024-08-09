@@ -1,5 +1,5 @@
 # Music_Store_Data_Analysis_SQL
-![download-ezgif com-resize](https://github.com/user-attachments/assets/fa9924b4-932e-438e-9d8e-c295df265592)
+![download-ezgif com-resize](https://github.com/user-attachments/assets/02babbf1-25e0-4a00-95f6-2b8fd936975a)
   
 #OVERVIEW -
 
