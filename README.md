@@ -1,4 +1,4 @@
-# Music_Store_Data_Analysis_SQL
+# MUSIC_STORE_DATA_ANALYSIS_SQL
 OVERVIEW -
 
 This project focuses on the analysis of music playlists and store data using SQL which help performing various SQL queries to gain insights into music preferences, trends, and store performance. The project showcases the power of SQL in handling complex data relationships and extracting meaningful information from large datasets.
@@ -12,3 +12,9 @@ Conducted an in-depth data analysis on a music playlist store database using SQL
 DATABASE SCHEMA -
 
 ![schema_music_store_analysis](https://github.com/user-attachments/assets/914d8ddd-8df4-42cf-9c3a-03ef27c03d27)
+
+# TECHNOLOGY USED -
+
+MySQL
+
+MS Excel
