@@ -4,7 +4,7 @@
 
 
 
----- Question/Solution  Set 1 (Easy)----
+---- Questions/Solutions  Set 1 (Easy)----
 
 1. Who is the senior most employee based on the job title 
 
@@ -13,4 +13,39 @@
      ORDER BY levels DESC
      LIMIT 1;
 
-2. Which countries have the most invoices
+2. Which countries have the most invoices SELECT billing_country,COUNT(invoice_id) AS max_invoices 
+    FROM invoice
+    GROUP BY billing_country
+    ORDER BY max_invoices DESC;
+
+3. What are the top 3 values of total invoices
+
+   (Invoivce is the commercial document that is issued by a seller to a buyer for goods,services,etc)--
+
+   SELECT total AS total_invoices FROM invoice
+   ORDER BY total_invoices DESC
+   LIMIT 3;
+
+4. Which city has the best customers? We would like to throw a promotional Music Festival in the city we made 
+   the most money. Write a query that returns one city that has the higheat sum of invoice totals. Return both 
+   the city name and sum of all invoice totals. 
+
+   (Invoice total/Invoice amount is a total amount  to be paid by the recipient of goods/services. The total 
+   invoice amount will be arrived at by adding the amounts mentioned for all the line items, additional charges and 
+   deducting discounts after that.)
+
+   SELECT billing_city,SUM(total) AS invoice_totals FROM invoice
+   GROUP BY billing_city
+   ORDER BY invoice_totals DESC
+   LIMIT 1;
+
+5. Who is the best customer? The customer who has spent the most money will be declared the best customer.Write
+   a query that returns the person who has spent the most money. 
+
+  SELECT c.customer_id,c.first_name,c.last_name,SUM(i.total) AS invoice_total
+  FROM customer c
+  INNER JOIN invoice i
+  ON c.customer_id=i.customer_id
+  GROUP BY c.customer_id
+  ORDER BY invoice_total DESC
+  LIMIT 1;
