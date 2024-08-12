@@ -1,1 +1,16 @@
+--------------                 Music_Store_Data_Analysis_SQL           -----------
 
+-------------  Solutions to the set of questions (Easy - Hard) as below ------
+
+
+
+---- Question/Solution  Set 1 (Easy)----
+
+1. Who is the senior most employee based on the job title 
+
+     SELECT employee_id, first_name, last_name, title, levels
+     FROM employee
+     ORDER BY levels DESC
+     LIMIT 1;
+
+2. Which countries have the most invoices
